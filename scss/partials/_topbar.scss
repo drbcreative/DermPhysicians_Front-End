@@ -2,11 +2,12 @@
 /* Top Bar ****************************************************************** */
 /* ************************************************************************** */
 .topbar {
-  background: $color-main;
-  height: 32px;
+  background: $color-light;
+  height: 40px;
   display: flex;
   align-items: center;
   transition: all .3s ease-out;
+  padding: 0 1rem;
 
   @include isMedium {
     padding: 0 1rem;
@@ -26,7 +27,7 @@
 
   .containerish {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 
     @include isMedium {
@@ -35,7 +36,7 @@
 
     .col-left {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
 
       .topbar-link {
         font-size: 1rem;
@@ -53,7 +54,8 @@
     }
 
     .col-right {
-      display: none;
+      display: inline-flex;
+      justify-content: flex-end;
 
       @include isMedium {
         display: inline-flex;

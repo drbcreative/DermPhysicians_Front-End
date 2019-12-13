@@ -5,14 +5,14 @@
 /* Topbar ******************************************************************* */
 .topbar-link {
   font-family: $font-secondary;
-  font-size: 12px;
+  font-size: 15px;
   // font-weight: 700;
   line-height: 1rem;
-  color: $color-white;
+  color: $color-dark;
   @include linkFade;
 
   &:hover {
-    color: $color-light-accent;
+    color: $color-main;
     text-decoration: none;
     @include linkFade;
   }
@@ -41,17 +41,17 @@
 /* General Page Links ******************************************************* */
 .gen-page-link {
   @extend .body-copy;
-  color: $color-light-accent;
+  color: $color-light;
 
   &:hover {
     text-decoration: none;
-    color: $color-light-accent;
+    color: $color-light;
   }
 }
 
 .appointment-page-link {
   @extend h5;
-  color: $color-light-accent;
+  color: $color-light;
 
   &:hover {
     text-decoration: none;
@@ -78,7 +78,7 @@
   @include linkFade;
 
   &:hover {
-    color: $color-light-accent;
+    color: $color-light;
     text-decoration: none;
     @include linkFade;
   }
@@ -90,7 +90,7 @@
   @include linkFade;
 
   &:hover {
-    color: $color-light-accent;
+    color: $color-light;
     text-decoration: none;
     @include linkFade;
   }

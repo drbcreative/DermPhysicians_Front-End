@@ -92,14 +92,14 @@
 
 /* Light Accent Button Color ************************************************ */
 .ui-btn-light-accent {
-  background-color: $color-light-accent;
-  border: 1px solid $color-light-accent;
+  background-color: $color-light;
+  border: 1px solid $color-light;
   color: $color-white;
 
   &:hover {
     color: $color-white;
-    border: 1px solid lighten($color-light-accent, 10);
-    background-color: lighten($color-light-accent, 10);
+    border: 1px solid lighten($color-light, 10);
+    background-color: lighten($color-light, 10);
     text-decoration: none;
   }
 }
@@ -107,27 +107,27 @@
 /* Light Accent Button Color Outline */
 .ui-btn-light-accent-ol {
   background-color: transparent;
-  border: 1px solid $color-light-accent;
-  color: $color-light-accent;
+  border: 1px solid $color-light;
+  color: $color-light;
 
   &:hover {
     color: $color-white;
-    border: 1px solid lighten($color-light-accent, 10);
-    background-color: lighten($color-light-accent, 10);
+    border: 1px solid lighten($color-light, 10);
+    background-color: lighten($color-light, 10);
     text-decoration: none;
   }
 }
 
 /* Dark Accent Button Color ************************************************ */
 .ui-btn-dark-accent {
-  background-color: $color-dark-accent;
-  border: 1px solid $color-dark-accent;
+  background-color: $color-light;
+  border: 1px solid $color-light;
   color: $color-white;
 
   &:hover {
     color: $color-white;
-    border: 1px solid lighten($color-dark-accent, 10);
-    background-color: lighten($color-dark-accent, 10);
+    border: 1px solid lighten($color-light, 10);
+    background-color: lighten($color-light, 10);
     text-decoration: none;
   }
 }
@@ -135,13 +135,13 @@
 /* Dark Accent Button Color Outline */
 .ui-btn-dark-accent-ol {
   background-color: transparent;
-  border: 1px solid $color-dark-accent;
-  color: $color-dark-accent;
+  border: 1px solid $color-light;
+  color: $color-light;
 
   &:hover {
     color: $color-white;
-    border: 1px solid lighten($color-dark-accent, 10);
-    background-color: lighten($color-dark-accent, 10);
+    border: 1px solid lighten($color-light, 10);
+    background-color: lighten($color-light, 10);
     text-decoration: none;
   }
 }
