@@ -22,7 +22,7 @@
   }
 }
 
-/* Retina Breakpoint */
+/* Retina Breakpoint 5 */
 @mixin isRetina {
   @media screen and (min-width: 1400px) {
     @content;

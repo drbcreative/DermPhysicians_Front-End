@@ -29,3 +29,213 @@
     }
   }
 }
+
+/* emsculpt */
+.emsculpt {
+  overflow: hidden;
+  position: relative;
+
+  .dashed-line {
+    display: none;
+
+    @include isXLarge {
+      display: block;
+      position: absolute;
+      width: 75%;
+      top: 0px;
+      left: 50px;
+    }
+
+    @include isRetina {
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 150px;
+      width: 65%;
+    }
+
+    @include isGiant {
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 600px;
+      width: 1000px;
+    }
+  }
+
+  .emsculpt--butt {
+    display: none;
+
+    @include isXLarge {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -45%;
+      height: 900px;
+      width: auto;
+    }
+
+    @include isRetina {
+      top: 0;
+      left: -33%;
+    }
+
+    @include isGiant {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .whatisemsculpt {
+    padding: 40px 20px;
+    background: $color-light;
+
+    @include isLarge {
+      padding: 60px 20px;
+      margin-top: 4rem;
+    }
+
+    @include isXLarge {
+      margin-top: 6rem;
+    }
+
+    .containerish {
+
+      display: grid;
+
+      @include isMedium {
+        grid-template-columns: 2fr 1fr;
+      }
+
+      @include isLarge {
+        grid-template-columns: 1fr 1.3fr;
+      }
+
+      @include isXLarge {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .section-info {
+        @include isLarge {
+          grid-column: 2;
+        }
+
+        @include isXLarge {
+          grid-column: 2;
+          width: 505px;
+        }
+      }
+    }
+
+  }
+
+  .fact-list {
+    background: $color-main;
+    padding: 20px;
+
+    @include isMedium {
+      position: absolute;
+      right: 30px;
+      top: 23%;
+    }
+
+    @include isLarge {
+      position: absolute;
+      right: 30px;
+      top: 43%;
+    }
+
+    @include isXLarge {
+      position: absolute;
+      right: 60px;
+      top: 45%;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, .2);
+    }
+
+    @include isRetina {
+      position: absolute;
+      right: 170px;
+      top: 45%;
+    }
+
+    @include isGiant {
+      position: absolute;
+      right: 40rem;
+      top: 45%;
+    }
+
+    .fact {
+      font-family: $font-secondary;
+      font-size: 15px;
+      line-height: 1.2rem;
+      font-weight: 600px;
+      color: $color-white;
+      margin: 0;
+    }
+  }
+
+  .whatitdoes {
+    padding: 40px 20px;
+
+    @include isMedium {
+      padding: 100px 20px;
+    }
+
+    @include isLarge {
+      padding: 100px 20px 40px 20px;
+    }
+
+    .containerish {
+      display: grid;
+      row-gap: 1rem;
+
+      @include isMedium {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @include isLarge {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      @include isXLarge {
+        max-width: 976px;
+      }
+
+      h2 {
+        text-align: center;
+
+        @include isMedium {
+          grid-column: 1 / -1;
+          padding-bottom: 1.5rem;
+        }
+      }
+
+      .col-one,
+      .col-two,
+      .col-three,
+      .col-four {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .col-img {
+          height: 158.42px;
+          width: 158.42px;
+          margin-bottom: 1rem;
+        }
+
+        .emcsulpt--icon-title {
+          font-family: $font-secondary;
+          font-size: 15px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+/* averages */
+.averages {
+  background: $color-main;
+  height: 200px;
+}

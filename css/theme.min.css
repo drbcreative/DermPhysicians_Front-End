@@ -24,7 +24,7 @@
 /* Med Breakpoint */
 /* Large Breakpoint */
 /* X-Large Breakpoint */
-/* Retina Breakpoint */
+/* Retina Breakpoint 5 */
 /* Giant (iMac Status) Breakpoint */
 /* ************************************************************************** */
 /* Section Layout *********************************************************** */
@@ -512,6 +512,168 @@ img {
         height: 605px; } }
     .hero .containerish .section-info {
       text-align: center; }
+
+/* emsculpt */
+.emsculpt {
+  overflow: hidden;
+  position: relative; }
+  .emsculpt .dashed-line {
+    display: none; }
+    @media screen and (min-width: 1200px) {
+      .emsculpt .dashed-line {
+        display: block;
+        position: absolute;
+        width: 75%;
+        top: 0px;
+        left: 50px; } }
+    @media screen and (min-width: 1400px) {
+      .emsculpt .dashed-line {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 150px;
+        width: 65%; } }
+    @media screen and (min-width: 2000px) {
+      .emsculpt .dashed-line {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 600px;
+        width: 1000px; } }
+  .emsculpt .emsculpt--butt {
+    display: none; }
+    @media screen and (min-width: 1200px) {
+      .emsculpt .emsculpt--butt {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -45%;
+        height: 900px;
+        width: auto; } }
+    @media screen and (min-width: 1400px) {
+      .emsculpt .emsculpt--butt {
+        top: 0;
+        left: -33%; } }
+    @media screen and (min-width: 2000px) {
+      .emsculpt .emsculpt--butt {
+        top: 0;
+        left: 0; } }
+  .emsculpt .whatisemsculpt {
+    padding: 40px 20px;
+    background: #D1E7F7; }
+    @media screen and (min-width: 992px) {
+      .emsculpt .whatisemsculpt {
+        padding: 60px 20px;
+        margin-top: 4rem; } }
+    @media screen and (min-width: 1200px) {
+      .emsculpt .whatisemsculpt {
+        margin-top: 6rem; } }
+    .emsculpt .whatisemsculpt .containerish {
+      display: grid; }
+      @media screen and (min-width: 768px) {
+        .emsculpt .whatisemsculpt .containerish {
+          grid-template-columns: 2fr 1fr; } }
+      @media screen and (min-width: 992px) {
+        .emsculpt .whatisemsculpt .containerish {
+          grid-template-columns: 1fr 1.3fr; } }
+      @media screen and (min-width: 1200px) {
+        .emsculpt .whatisemsculpt .containerish {
+          grid-template-columns: 1fr 1fr; } }
+      @media screen and (min-width: 992px) {
+        .emsculpt .whatisemsculpt .containerish .section-info {
+          grid-column: 2; } }
+      @media screen and (min-width: 1200px) {
+        .emsculpt .whatisemsculpt .containerish .section-info {
+          grid-column: 2;
+          width: 505px; } }
+  .emsculpt .fact-list {
+    background: #5F7994;
+    padding: 20px; }
+    @media screen and (min-width: 768px) {
+      .emsculpt .fact-list {
+        position: absolute;
+        right: 30px;
+        top: 23%; } }
+    @media screen and (min-width: 992px) {
+      .emsculpt .fact-list {
+        position: absolute;
+        right: 30px;
+        top: 43%; } }
+    @media screen and (min-width: 1200px) {
+      .emsculpt .fact-list {
+        position: absolute;
+        right: 60px;
+        top: 45%;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); } }
+    @media screen and (min-width: 1400px) {
+      .emsculpt .fact-list {
+        position: absolute;
+        right: 170px;
+        top: 45%; } }
+    @media screen and (min-width: 2000px) {
+      .emsculpt .fact-list {
+        position: absolute;
+        right: 40rem;
+        top: 45%; } }
+    .emsculpt .fact-list .fact {
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+      line-height: 1.2rem;
+      font-weight: 600px;
+      color: #ffffff;
+      margin: 0; }
+  .emsculpt .whatitdoes {
+    padding: 40px 20px; }
+    @media screen and (min-width: 768px) {
+      .emsculpt .whatitdoes {
+        padding: 100px 20px; } }
+    @media screen and (min-width: 992px) {
+      .emsculpt .whatitdoes {
+        padding: 100px 20px 40px 20px; } }
+    .emsculpt .whatitdoes .containerish {
+      display: grid;
+      row-gap: 1rem; }
+      @media screen and (min-width: 768px) {
+        .emsculpt .whatitdoes .containerish {
+          grid-template-columns: 1fr 1fr; } }
+      @media screen and (min-width: 992px) {
+        .emsculpt .whatitdoes .containerish {
+          grid-template-columns: repeat(4, 1fr); } }
+      @media screen and (min-width: 1200px) {
+        .emsculpt .whatitdoes .containerish {
+          max-width: 976px; } }
+      .emsculpt .whatitdoes .containerish h2 {
+        text-align: center; }
+        @media screen and (min-width: 768px) {
+          .emsculpt .whatitdoes .containerish h2 {
+            grid-column: 1 / -1;
+            padding-bottom: 1.5rem; } }
+      .emsculpt .whatitdoes .containerish .col-one,
+      .emsculpt .whatitdoes .containerish .col-two,
+      .emsculpt .whatitdoes .containerish .col-three,
+      .emsculpt .whatitdoes .containerish .col-four {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .emsculpt .whatitdoes .containerish .col-one .col-img,
+        .emsculpt .whatitdoes .containerish .col-two .col-img,
+        .emsculpt .whatitdoes .containerish .col-three .col-img,
+        .emsculpt .whatitdoes .containerish .col-four .col-img {
+          height: 158.42px;
+          width: 158.42px;
+          margin-bottom: 1rem; }
+        .emsculpt .whatitdoes .containerish .col-one .emcsulpt--icon-title,
+        .emsculpt .whatitdoes .containerish .col-two .emcsulpt--icon-title,
+        .emsculpt .whatitdoes .containerish .col-three .emcsulpt--icon-title,
+        .emsculpt .whatitdoes .containerish .col-four .emcsulpt--icon-title {
+          font-family: "Montserrat", sans-serif;
+          font-size: 15px;
+          font-weight: 600; }
+
+/* averages */
+.averages {
+  background: #5F7994;
+  height: 200px; }
 
 /* ************************************************************************** */
 /* FOOTER Sections ********************************************************** */
