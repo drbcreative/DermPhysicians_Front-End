@@ -393,7 +393,7 @@ header {
 /* Buttons ****************************************************************** */
 /* ************************************************************************** */
 .ui-btn-group .ui-btn:not(:last-child) {
-  margin-right: 0.85rem; }
+  margin-right: 1rem; }
 
 /* General Button Style */
 .ui-btn {
@@ -412,7 +412,7 @@ header {
   transition: all 0.3s ease-in-out; }
   @media screen and (min-width: 768px) {
     .ui-btn {
-      width: 240px;
+      width: auto;
       padding: 1rem 1rem; } }
 
 /* Main Button Color ******************************************************** */
@@ -459,50 +459,6 @@ header {
     background-color: #8895a5;
     text-decoration: none; }
 
-/* Light Accent Button Color ************************************************ */
-.ui-btn-light-accent {
-  background-color: #D1E7F7;
-  border: 1px solid #D1E7F7;
-  color: #ffffff; }
-  .ui-btn-light-accent:hover {
-    color: #ffffff;
-    border: 1px solid #fcfeff;
-    background-color: #fcfeff;
-    text-decoration: none; }
-
-/* Light Accent Button Color Outline */
-.ui-btn-light-accent-ol {
-  background-color: transparent;
-  border: 1px solid #D1E7F7;
-  color: #D1E7F7; }
-  .ui-btn-light-accent-ol:hover {
-    color: #ffffff;
-    border: 1px solid #fcfeff;
-    background-color: #fcfeff;
-    text-decoration: none; }
-
-/* Dark Accent Button Color ************************************************ */
-.ui-btn-dark-accent {
-  background-color: #D1E7F7;
-  border: 1px solid #D1E7F7;
-  color: #ffffff; }
-  .ui-btn-dark-accent:hover {
-    color: #ffffff;
-    border: 1px solid #fcfeff;
-    background-color: #fcfeff;
-    text-decoration: none; }
-
-/* Dark Accent Button Color Outline */
-.ui-btn-dark-accent-ol {
-  background-color: transparent;
-  border: 1px solid #D1E7F7;
-  color: #D1E7F7; }
-  .ui-btn-dark-accent-ol:hover {
-    color: #ffffff;
-    border: 1px solid #fcfeff;
-    background-color: #fcfeff;
-    text-decoration: none; }
-
 /* White Button Color ******************************************************* */
 .ui-btn-white {
   background-color: #fff;
@@ -537,6 +493,26 @@ img {
 /* ************************************************************************** */
 /* Main Page Sections ******************************************************* */
 /* ************************************************************************** */
+/* hero */
+.hero {
+  background: url("../../images/hero-bg@2x.jpg") center/cover;
+  padding: 40px 20px; }
+  @media screen and (min-width: 992px) {
+    .hero {
+      margin-top: 163px; } }
+  .hero .containerish {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media screen and (min-width: 992px) {
+      .hero .containerish {
+        height: 500px; } }
+    @media screen and (min-width: 1200px) {
+      .hero .containerish {
+        height: 605px; } }
+    .hero .containerish .section-info {
+      text-align: center; }
+
 /* ************************************************************************** */
 /* FOOTER Sections ********************************************************** */
 /* ************************************************************************** */

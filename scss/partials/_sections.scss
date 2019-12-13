@@ -1,3 +1,31 @@
 /* ************************************************************************** */
 /* Main Page Sections ******************************************************* */
 /* ************************************************************************** */
+
+/* hero */
+.hero {
+  background: url('../../images/hero-bg@2x.jpg') center / cover;
+  padding: 40px 20px;
+
+  @include isLarge {
+    margin-top: 163px;
+  }
+
+  .containerish {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include isLarge {
+      height: 500px;
+    }
+
+    @include isXLarge {
+      height: 605px;
+    }
+
+    .section-info {
+      text-align: center;
+    }
+  }
+}
