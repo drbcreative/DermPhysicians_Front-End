@@ -1,0 +1,174 @@
+/* ************************************************************************** */
+/* Buttons ****************************************************************** */
+/* ************************************************************************** */
+@mixin btn-fade {
+  transition: all 0.3s ease-in-out;
+}
+
+.ui-btn-group {
+  .ui-btn:not(:last-child) {
+    margin-right: 0.85rem;
+  }
+}
+
+/* General Button Style */
+.ui-btn {
+  font-family: $font-secondary;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  line-height: 15px;
+  padding: 1rem 0rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  // border-radius: 50px;
+  @include btn-fade;
+
+  @include isMedium {
+    width: 240px;
+    padding: 1rem 1rem;
+  }
+}
+
+/* Main Button Color ******************************************************** */
+.ui-btn-main {
+  background-color: $color-main;
+  border: 1px solid $color-main;
+  color: $color-white;
+
+  &:hover {
+    color: $color-white;
+    border: 1px solid lighten($color-main, 20);
+    background-color: lighten($color-main, 20);
+    text-decoration: none;
+  }
+}
+
+/* Main Button Color Outline */
+.ui-btn-main-ol {
+  background-color: transparent;
+  border: 1px solid $color-main;
+  color: $color-main;
+
+  &:hover {
+    color: $color-white;
+    border: 1px solid lighten($color-main, 10);
+    background-color: lighten($color-main, 10);
+    text-decoration: none;
+  }
+}
+
+/* Light Button Color ******************************************************* */
+.ui-btn-light {
+  background-color: #A1B0C3;
+  border: 1px solid #A1B0C3;
+  color: $color-white;
+
+  &:hover {
+    color: $color-white;
+    border: 1px solid lighten(#A1B0C3, 10);
+    background-color: lighten(#A1B0C3, 10);
+    text-decoration: none;
+  }
+}
+
+/* Dark Button Color ******************************************************* */
+.ui-btn-dark {
+  background-color: #6C7B8E;
+  border: 1px solid #6C7B8E;
+  color: $color-white;
+
+  &:hover {
+    color: $color-white;
+    border: 1px solid lighten(#6C7B8E, 10);
+    background-color: lighten(#6C7B8E, 10);
+    text-decoration: none;
+  }
+}
+
+/* Light Accent Button Color ************************************************ */
+.ui-btn-light-accent {
+  background-color: $color-light-accent;
+  border: 1px solid $color-light-accent;
+  color: $color-white;
+
+  &:hover {
+    color: $color-white;
+    border: 1px solid lighten($color-light-accent, 10);
+    background-color: lighten($color-light-accent, 10);
+    text-decoration: none;
+  }
+}
+
+/* Light Accent Button Color Outline */
+.ui-btn-light-accent-ol {
+  background-color: transparent;
+  border: 1px solid $color-light-accent;
+  color: $color-light-accent;
+
+  &:hover {
+    color: $color-white;
+    border: 1px solid lighten($color-light-accent, 10);
+    background-color: lighten($color-light-accent, 10);
+    text-decoration: none;
+  }
+}
+
+/* Dark Accent Button Color ************************************************ */
+.ui-btn-dark-accent {
+  background-color: $color-dark-accent;
+  border: 1px solid $color-dark-accent;
+  color: $color-white;
+
+  &:hover {
+    color: $color-white;
+    border: 1px solid lighten($color-dark-accent, 10);
+    background-color: lighten($color-dark-accent, 10);
+    text-decoration: none;
+  }
+}
+
+/* Dark Accent Button Color Outline */
+.ui-btn-dark-accent-ol {
+  background-color: transparent;
+  border: 1px solid $color-dark-accent;
+  color: $color-dark-accent;
+
+  &:hover {
+    color: $color-white;
+    border: 1px solid lighten($color-dark-accent, 10);
+    background-color: lighten($color-dark-accent, 10);
+    text-decoration: none;
+  }
+}
+
+/* White Button Color ******************************************************* */
+.ui-btn-white {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: $color-main;
+
+  &:hover {
+    color: $color-dark;
+    background-color: darken(#fff, 15);
+    border: 1px solid darken(#fff, 15);
+    text-decoration: none;
+  }
+}
+
+.ui-btn-white-ol {
+  background-color: transparent;
+  border: 1px solid $color-white;
+  color: $color-white;
+
+  &:hover {
+    color: $color-main;
+    background-color: darken(#fff, 15);
+    border: 1px solid darken(#fff, 15);
+    text-decoration: none;
+  }
+}

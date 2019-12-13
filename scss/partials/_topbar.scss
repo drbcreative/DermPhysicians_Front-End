@@ -1,0 +1,74 @@
+/* ************************************************************************** */
+/* Top Bar ****************************************************************** */
+/* ************************************************************************** */
+.topbar {
+  background: $color-main;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  transition: all .3s ease-out;
+
+  @include isMedium {
+    padding: 0 1rem;
+  }
+
+  @include isLarge {
+    &.active {
+      opacity: 0;
+      // display: none;
+      transition: all .3s ease-out;
+    }
+  }
+
+  @include isRetina {
+    padding: 0;
+  }
+
+  .containerish {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+
+    @include isMedium {
+      grid-template-columns: max-content 1fr;
+    }
+
+    .col-left {
+      display: flex;
+      justify-content: center;
+
+      .topbar-link {
+        font-size: 1rem;
+      }
+
+      .topbar-link:not(:last-child) {
+        margin-right: 1rem;
+      }
+
+      @include isLarge {
+        &.active {
+          opacity: 0;
+        }
+      }
+    }
+
+    .col-right {
+      display: none;
+
+      @include isMedium {
+        display: inline-flex;
+        justify-content: flex-end;
+
+        .topbar-link:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+
+      @include isRetina {
+        .topbar-link:not(:last-child) {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+}

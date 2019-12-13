@@ -1,0 +1,134 @@
+/* ************************************************************************** */
+/* Typography *************************************************************** */
+/* ************************************************************************** */
+@import "https://use.fontawesome.com/releases/v5.4.1/css/all.css";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700|Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap');
+
+$font-primary: 'Open Sans',
+sans-serif;
+$font-secondary: 'Montserrat',
+sans-serif;
+
+// General Font Setup
+// Headers
+h1,
+h2,
+h3,
+h4,
+h5 h6 {
+  margin: 0 !important;
+}
+
+/* Primary Header */
+h1 {
+  font-family: $font-secondary;
+  font-size: 2.75rem; // 44px
+  line-height: 2.75rem;
+  font-weight: 300;
+
+  &.is-bold {
+    font-weight: 700;
+  }
+}
+
+h2 {
+  font-family: $font-secondary;
+  font-size: 2.5rem; // 40px
+  line-height: 2.5rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: $font-secondary;
+  font-size: 1.5rem; // 24px
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-family: $font-secondary;
+  font-size: 1.875rem; // 30px
+  line-height: 1.875rem;
+  font-weight: 300;
+}
+
+h5 {
+  font-family: $font-secondary;
+  font-size: 1.6875rem; // 27px
+  line-height: 1.6875rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+h6 {
+  font-family: $font-secondary;
+  font-weight: 300;
+
+}
+
+
+//Body Text
+.body-copy {
+  font-size: 1.125rem; // 18px
+  line-height: calc(1.125rem * 1.5);
+  font-family: $font-primary;
+
+  &.is-light {
+    font-weight: 300;
+  }
+
+  &.is-italic {
+    font-style: italic;
+  }
+
+  &.is-bold {
+    font-weight: 700;
+  }
+}
+
+/* Lead Text (hero) */
+.lead-copy {
+  font-size: 1.5rem; // 24px
+  line-height: calc(1.5rem * 1.5);
+  font-family: $font-primary;
+}
+
+/* Footer2 Text */
+.small-copy {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: calc(12px * 1.5);
+  font-family: $font-secondary;
+
+  &.is-semibold {
+    font-weight: 600;
+  }
+
+  &.is-bold {
+    font-weight: 700;
+  }
+}
+
+/* Text Modifiers */
+.wrap-75 {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+input {
+  font-family: $font-primary;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  h2 {
+    font-size: 2.5rem !important;
+    line-height: 2.5rem !important;
+  }
+}
