@@ -237,5 +237,149 @@
 /* averages */
 .averages {
   background: $color-main;
-  height: 200px;
+  padding: 20px;
+
+  .containerish {
+    display: grid;
+
+    p {
+      margin: 0;
+    }
+
+    @include isXLarge {
+      max-width: 900px;
+    }
+
+    @include isMedium {
+      grid-template-columns: 1fr .5fr 1fr;
+      align-items: center;
+    }
+
+    @include isLarge {
+      grid-template-columns: 1fr 100px 1fr;
+      align-items: center;
+    }
+
+    @include isXLarge {
+      grid-template-columns: 1fr 100px 1fr;
+      align-items: center;
+    }
+
+    .col-left,
+    .col-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include isLarge {
+        flex-direction: row;
+      }
+
+      .bignumber {
+        font-family: $font-secondary;
+        font-size: 5rem;
+        line-height: 5rem;
+        color: $color-white;
+
+        @include isLarge {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .col-mid {
+      display: inline-flex;
+      justify-content: center;
+
+      .col-plus-copy {
+        font-family: $font-secondary;
+        font-size: 2.75rem;
+        line-height: 2.75rem;
+        font-weight: 600;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+/* efficacy */
+.efficacy {
+  // padding: 40px 20px;
+  overflow: hidden;
+  position: relative;
+
+  .dashed-line {
+    display: none;
+
+    @include isXLarge {
+      display: block;
+      width: 85%;
+      position: absolute;
+      top: 0;
+      left: -37%;
+    }
+
+    @include isRetina {
+      width: 65%;
+      top: 0;
+      left: -25%;
+    }
+
+    @include isGiant {
+      width: 35%;
+      top: 0;
+      left: 5%;
+    }
+  }
+
+  .containerish {
+    text-align: center;
+    padding: 40px 20px;
+  }
+}
+
+/* how it works */
+.howitworks {
+  .containerish-fluid {
+    display: grid;
+
+    @include isMedium {
+      grid-template-columns: 1fr 1fr;
+      align-items: stretch
+    }
+
+    @include isMedium {
+      grid-template-columns: 1fr 1.5fr;
+      align-items: stretch
+    }
+
+    @include isRetina {
+      grid-template-columns: 1fr 2fr;
+      align-items: stretch
+    }
+
+    .col-left {
+      background: $color-light;
+      padding: 20px;
+
+      @include isXLarge {
+        padding: 40px;
+      }
+    }
+
+    .col-right {
+      background: $color-main;
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+
+      @include isLarge {
+        padding: 2rem 5rem;
+      }
+
+      @include isRetina {
+        padding: 2rem 10rem;
+      }
+    }
+  }
 }
