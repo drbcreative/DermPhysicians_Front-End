@@ -4,7 +4,7 @@
 
 /* hero */
 .hero {
-  background: url('../../images/hero-bg@2x.jpg') center / cover;
+  background: url('../images/hero-bg@2x.jpg') center / cover;
   padding: 40px 20px;
 
   @include isLarge {
@@ -491,7 +491,7 @@
       }
 
       .col-right {
-        background: url('../../images/whattoexpect-img@2x.jpg') center / cover;
+        background: url('../images/whattoexpect-img@2x.jpg') center / cover;
         height: 400px;
 
         @include isRetina {
@@ -534,7 +534,7 @@
       }
 
       .col-right {
-        background: url('../../images/candidate-img@2x.jpg') center / cover;
+        background: url('../images/candidate-img@2x.jpg') center / cover;
         height: 400px;
 
         @include isLarge {
@@ -545,6 +545,265 @@
         @include isRetina {
           height: 650px;
         }
+      }
+    }
+  }
+}
+
+/* before and after section */
+.before-after {
+  background: $color-main;
+  padding: 40px 20px;
+
+  @include isLarge {
+    padding: 80px 20px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem !important;
+  }
+
+  .before-after--selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-width: 1150px;
+    margin: 0 auto;
+
+    @include isMedium {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .ba-select {
+      opacity: .6;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+
+  .carousel-wrapper {
+    display: none;
+    max-width: 576px;
+    margin: 0 auto;
+
+    .slider {
+      img:nth-child(1n+1) {
+        padding: 0 .5rem;
+      }
+    }
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .slider-nav {
+    position: relative;
+    height: 50px;
+  }
+
+  slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 30px;
+    margin-top: 0px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .slick-dots li button::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "_";
+    width: 20px;
+    height: 20px;
+    font-family: "slick";
+    font-size: 40px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    opacity: 0.25;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* faqs */
+.faqs {
+  padding: 40px 20px;
+
+  @include isMedium {
+    padding: 60px 20px;
+  }
+
+  @include isLarge {
+    padding: 80px 20px;
+  }
+
+  .card {
+    .card-header {
+      background: $color-light;
+
+      .collapsed {
+        color: $color-dark;
+        font-family: $font-primary;
+        font-weight: 700;
+        text-decoration: none;
+
+        &::after {
+          content: '+';
+          font-size: 1.5rem;
+          line-height: 1.5rem;
+          vertical-align: middle;
+          margin-left: .7rem;
+        }
+      }
+    }
+
+    .btn-link {
+      color: $color-dark;
+      font-family: $font-primary;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .card-body {
+      background: $color-main;
+      color: $color-white;
+      font-family: $font-primary;
+      font-size: 18px;
+
+      @include isXLarge {
+        padding: 2rem 15rem 2rem 2rem
+      }
+
+    }
+  }
+}
+
+/* about */
+.about {
+  .containerish-fluid {
+    display: grid;
+
+    @include isLarge {
+      grid-template-columns: 1fr 1fr;
+      align-items: stretch;
+    }
+
+    .col-left {
+      background: url('../images/about-info-bg@2x.jpg') center / cover;
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include isXLarge {
+        padding: 4rem;
+      }
+
+      @include isGiant {
+        padding: 10rem;
+      }
+
+      .section-info {
+        max-width: 540px;
+      }
+    }
+
+    .col-right {
+      background: url('../images/about-img@2x.jpg') center / cover;
+      height: 300px;
+
+      @include isLarge {
+        height: 500px;
+      }
+
+      @include isXLarge {
+        height: 600px;
+      }
+
+      @include isGiant {
+        height: 800px;
+      }
+    }
+  }
+}
+
+/* consultation */
+.consultation {
+  background: url('../images/form-bg@2x.jpg') center / cover;
+  min-height: 200px;
+  padding: 40px 20px;
+
+  @include isXLarge {
+    padding: 80px 20px;
+  }
+
+  .containerish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+
+    .section-info {
+      text-align: center;
+    }
+
+    .consult-form {
+      display: grid;
+      width: 100%;
+      row-gap: 1rem;
+
+      @include isMedium {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+        row-gap: 2rem;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $color-dark;
+        background: transparent;
+      }
+
+      input {
+        height: 45px;
+      }
+
+      textarea {
+        height: 80px;
+
+        @include isMedium {
+          grid-column: 1 / -1;
+        }
+      }
+
+      button {
+        @include isMedium {
+          grid-column: 1 / -1;
+          justify-self: center;
+          margin-top: 2rem;
+        }
+      }
+
+      ::placeholder {
+        font-family: $font-primary;
+        font-size: 14px;
+        font-weight: 300;
+        color: $color-main;
       }
     }
   }
